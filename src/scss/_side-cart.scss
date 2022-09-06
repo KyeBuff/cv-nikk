@@ -1,0 +1,255 @@
+.xoo-wsch-top {
+	.xoo-wsch-text,
+	.xoo-wsch-basket {
+		display: none;
+	}
+}
+
+.xoo-wsc-header {
+	display: none;
+}
+
+.xoo-wsc-modal {
+	.xoo-wsc-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		z-index: 200;
+		transition: right 0.3s ease-in-out;
+		top: 84px !important;
+		
+		@media (min-width: 992px) {
+			top: 107px !important;
+		}
+	}
+	.xoo-wsc-opac {
+		opacity: 1;
+		background-color: rgba($black, 0.8);
+		z-index: 1;
+	}
+}
+
+.xoo-wsc-cart-active {
+	.xoo-wsc-container {
+		@media screen and (max-width: 520px) {
+			max-width: 80vw;
+		}
+	}
+}
+
+.xoo-wsc-ft-buttons-cont {
+	display: flex;
+	justify-content: space-between;
+	grid-column-gap: 0;
+	grid-row-gap: 0;
+	align-items: flex-end;
+	.button {
+		flex: 1;
+		@include ctaDanger();
+		background-color: #69716a;
+	}
+	a.xoo-wsc-ft-btn-continue {
+		display: none;
+	}
+	a.xoo-wsc-ft-btn-cart {
+		@include ctaWhite();
+	}
+	a.xoo-wsc-ft-btn-checkout {
+		@include ctaYellow();
+		margin-left: 0.5rem;
+	}
+}
+
+.xoo-wsc-empty-cart {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	.button {
+		margin-top: 1rem;
+		display: block;
+		@include ctaDanger();
+		background-color: #69716a;
+	}
+}
+.xoo-wsc-ft-totals {
+	margin-bottom: 0;
+}
+.xoo-wsc-ft-amt-subtotal {
+	display: block;
+	font-size: 20px;
+	text-align: var(--menu-cart-subtotal-text-align, center);
+	font-weight: 700;
+	color: var(--menu-cart-subtotal-color, inherit);
+	.xoo-wsc-ft-amt-label {
+		padding-right: 0;
+		&::after {
+			content: ': ';
+		}
+	}
+}
+
+span.xoo-wsc-ft-amt-label {
+	font-weight: bold;
+}
+
+.xoo-wsc-body {
+	flex-grow: unset;
+}
+
+.xoo-wsc-product {
+	border-bottom: none;
+	margin: 0.75rem 0;
+}
+
+.xoo-wsc-products {
+	padding-right: 0.5rem;
+	padding-left: 0.5rem;
+	position: relative;
+	&::after {
+		display: block;
+		content: '';
+		position: sticky;
+		bottom: 0;
+		height: 3rem;
+		left: 0;
+		right: 0;
+		background-image: linear-gradient(
+			to bottom,
+			rgba(255, 255, 255, 0) 0%,
+			rgba(255, 255, 255, 1) 100%
+		);
+	}
+}
+
+.cart-count {
+	height: 1.25rem;
+	width: 1.25rem;
+	color: white;
+	background: $danger;
+	border-radius: 50%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	font-size: 0.7rem;
+	position: absolute;
+	right: -0.25rem;
+	&.hide {
+		display: none;
+	}
+}
+
+.xoo-wsc-qty-price {
+	display: inline-block;
+	float: left;
+	span {
+		&:first-child {
+			display: none;
+		}
+	}
+}
+
+.xoo-wsc-sm-left {
+	display: grid;
+	grid-template-columns: 3rem 1fr;
+	grid-template-rows: auto auto;
+}
+
+span.xoo-wsc-pname {
+	display: block;
+	grid-column: span 2;
+	width: 100%;
+	margin-bottom: 0.5rem;
+	a {
+		color: $black;
+		font-weight: 400;
+	}
+}
+
+.xoo-wsc-qty-box {
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+	margin-top: 0;
+	border: 1px solid $black;
+	width: 2.9rem;
+	height: 2.5rem;
+	span.xoo-wsc-chng {
+		display: none;
+	}
+	.xoo-wsc-qty {
+		border: none !important;
+	}
+}
+
+.xoo-wsc-sm-left > *:not(:last-child) {
+	padding-bottom: 0;
+}
+
+.xoo-wsc-pprice {
+	display: inline-block;
+	font-size: 0;
+
+	align-self: center;
+
+	.woocommerce-Price-amount {
+		display: inline-block;
+		font-weight: bold;
+		&::before {
+			content: ' x';
+			font-weight: bold;
+			padding: 0 0.75rem 0 0.75rem;
+		}
+	}
+}
+
+.xoo-wsc-sm-right {
+	justify-content: flex-end;
+	padding-bottom: 0.33rem;
+}
+
+.xoo-wsc-icon-trash {
+	position: relative;
+	bottom: 0.35rem;
+	&:hover::before {
+		color: #e9501c;
+	}
+	&::before {
+		font-size: 1.25rem;
+	}
+}
+
+.xoo-wsc-img-col {
+	align-self: stretch;
+	min-height: 100%;
+	a {
+		padding: 0.5rem 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+	}
+	img {
+		object-fit: contain;
+	}
+}
+
+.search-open,
+.xoo-wsc-cart-active {
+	#tidio-chat {
+		display: none;
+	}
+	.description_tab.active,
+	.woocommerce-product-gallery__trigger {
+		z-index: 0 !important;
+	}
+	[data-elementor-type='footer'] {
+		z-index: -1 !important;
+	}
+	div.product .woocommerce-tabs ul.tabs li {
+		z-index: -1 !important;
+	}
+}
+
+.xoo-wsc-footer {
+	padding-bottom: 2rem;
+}

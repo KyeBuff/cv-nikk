@@ -1,0 +1,197 @@
+{
+	"content": [
+		{
+			"id": "38d426a5",
+			"settings": {
+				"layout": "full_width",
+				"eae_slider_delay": "5000",
+				"gradient_color_list": [
+					{ "_id": "e2acdb4" },
+					{ "eae_animated_gradient_color": "#b800c9", "_id": "024f166" },
+					{ "eae_animated_gradient_color": "#e57600", "_id": "ae959a9" }
+				],
+				"hide_mobile": "hidden-mobile",
+				"css_classes": "info-banner-wrapper"
+			},
+			"elements": [
+				{
+					"id": "1ee8cb01",
+					"settings": {
+						"_column_size": 100,
+						"_inline_size": null,
+						"eae_slider_delay": "5000",
+						"gradient_color_list": [
+							{ "_id": "907f5fe" },
+							{ "eae_animated_gradient_color": "#b800c9", "_id": "9bb7b4d" },
+							{ "eae_animated_gradient_color": "#e57600", "_id": "c8b8ed8" }
+						]
+					},
+					"elements": [
+						{
+							"id": "19991a05",
+							"settings": {
+								"html": "<div class=\"info-banner\">\n    <div class=\"info-banner__container\">\n    \t<p class=\"info-banner__delivery style-m9 icon--delivery\">Free delivery over \u00a330</p>\n    \t<a class=\"info-banner__link style-m5 icon--nomadic-energy\" href=\"/nomadic-energy\">Try our new electrical design service</a>\n    \t<p class=\"info-banner__price-match style-m9 icon--price\">Price match guarantee</p>\n\t</div>\n</div>",
+								"hide_mobile": "hidden-mobile"
+							},
+							"elements": [],
+							"isInner": false,
+							"widgetType": "html",
+							"elType": "widget"
+						}
+					],
+					"isInner": false,
+					"elType": "column"
+				}
+			],
+			"isInner": false,
+			"elType": "section"
+		},
+		{
+			"id": "5d4140af",
+			"settings": {
+				"layout": "full_width",
+				"height": "min-height",
+				"custom_height": { "unit": "px", "size": 80, "sizes": [] },
+				"column_position": "stretch",
+				"padding": {
+					"unit": "em",
+					"top": "",
+					"right": "",
+					"bottom": "",
+					"left": "",
+					"isLinked": true
+				},
+				"sticky": "top",
+				"background_background": "classic",
+				"background_color": "#FFFFFF",
+				"border_border": "solid",
+				"border_width": {
+					"unit": "px",
+					"top": "0",
+					"right": "0",
+					"bottom": "0",
+					"left": "0",
+					"isLinked": "1"
+				},
+				"border_width_tablet": {
+					"unit": "px",
+					"top": "0",
+					"right": "0",
+					"bottom": "0",
+					"left": "0",
+					"isLinked": "1"
+				},
+				"border_width_mobile": {
+					"unit": "px",
+					"top": "0",
+					"right": "0",
+					"bottom": "1",
+					"left": "0",
+					"isLinked": ""
+				},
+				"border_color": "#E7E7E7",
+				"_timestamp_": "v1T1ZqOEUrWlo0Sytuc2dkbUxMTGZsQT09",
+				"eae_slider_delay": "5000",
+				"gradient_color_list": [
+					{ "_id": "58c1256" },
+					{ "eae_animated_gradient_color": "#b800c9", "_id": "109563f" },
+					{ "eae_animated_gradient_color": "#e57600", "_id": "cc50630" }
+				],
+				"css_classes": "header-main"
+			},
+			"elements": [
+				{
+					"id": "18e36adc",
+					"settings": {
+						"_column_size": 100,
+						"_inline_size": null,
+						"content_position": "center",
+						"padding": {
+							"unit": "px",
+							"top": "0",
+							"right": "0",
+							"bottom": "0",
+							"left": "0",
+							"isLinked": "1"
+						},
+						"_inline_size_mobile": 40,
+						"_inline_size_tablet": 30,
+						"eae_slider_delay": "5000",
+						"gradient_color_list": [
+							{ "_id": "498cde7" },
+							{ "eae_animated_gradient_color": "#b800c9", "_id": "b961529" },
+							{ "eae_animated_gradient_color": "#e57600", "_id": "8360eae" }
+						],
+						"css_classes": "header-main__nav-wrapper"
+					},
+					"elements": [
+						{
+							"id": "9580a6b",
+							"settings": {
+								"image_size": "full",
+								"align": "left",
+								"link_to": "custom",
+								"__dynamic__": {
+									"link": "[elementor-tag id=\"96c0ce6\" name=\"site-url\" settings=\"%7B%7D\"]"
+								},
+								"width": { "unit": "px", "size": "", "sizes": [] },
+								"neb_content_protection_password_placeholder": "Enter Password",
+								"neb_content_protection_password_submit_btn_txt": "Submit",
+								"_margin": {
+									"unit": "px",
+									"top": "0",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": true
+								},
+								"image_custom_dimension": { "width": "160", "height": "" },
+								"space": { "unit": "px", "size": 165, "sizes": [] },
+								"_margin_mobile": {
+									"unit": "px",
+									"top": "5",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": false
+								},
+								"tooltip_content": "I'm a tooltip",
+								"_css_classes": "header-main__logo",
+								"image": {
+									"id": 9553,
+									"url": "https://climbingvan.co.uk/wp-content/uploads/2021/12/climbingvan-logo-black-small-1.png"
+								},
+								"custom_image_mask": {
+									"id": 9554,
+									"url": "https://climbingvan.co.uk/wp-content/uploads/2021/12/placeholder.png"
+								}
+							},
+							"elements": [],
+							"isInner": false,
+							"widgetType": "image",
+							"elType": "widget"
+						},
+						{
+							"id": "56af6f2d",
+							"settings": {
+								"custom_php": "// get navs\n$locations = get_nav_menu_locations();\n\n// get menu items by menu name\n$flatMainNav = wp_get_nav_menu_items($locations['menu-1']);\n$mainNav = buildTree($flatMainNav);\n\n// get menu items by menu name\n$shopNavItems = wp_get_nav_menu_items($locations['shop']);\n$shopNav = buildTree($shopNavItems);\n\nglobal $woocommerce;\n$cartCount = $woocommerce->cart->cart_contents_count;\n\n?>\n\n<button id=\"main-search\" class=\"header-main__search icon--search\">\n    <span class=\"elementor-screen-only\">Search</span>\n\t<div class=\"header-main__search-mobile-wrapper\">\n\t\t<?php echo do_shortcode('[fibosearch]'); ?>\n\t</div>\n</button>\n<a href=\"#\" class=\"xoo-wsc-cart-trigger elementor-menu-cart__toggle_button header-main__add-to-cart icon--cart\">\n\t<span class=\"elementor-screen-only\">Cart</span> \n    <span class=\"cart-count <?php echo $cartCount ? '' : 'hide';?>\"><?php echo $cartCount; ?></span>\n</a>\n<button class=\"header-main__hamburger\">\n\t<i class=\"fas fa-bars\"></i>\n\t<span class=\"elementor-screen-only\">Menu</span>\n</button>\n<nav class=\"header-main__nav\">\n\t<ul class=\"header-main__nav-items\">\n\t\t<?php foreach ($mainNav as $navItem): ?>\n\t\t\t<li class=\"header-main__nav-item\">\n\t\t\t\t<?php $type = get_field('content_type', $navItem); ?>\n\t\t\t\t\t<a class=\"header-main__nav-link header-main__nav-link--<?php the_field('type', $navItem);?>\" href=\"<?php echo $navItem->url; ?>\"><?php echo $navItem->title; ?>\n\t\t\t\t\t\t<i class=\"fas fa-chevron-down\"></i>\n\t\t\t\t\t</a>\n\t\t\t\t\t<?php createSubMenu($navItem); ?>\n\t\t\t</li>\n\t\t<?php endforeach; ?>\n\t</ul>\n\t<ul class=\"header-main__nav-items header-main__nav-items--shop\">\n\t\t<?php foreach ($shopNav as $navItem): ?>\n\t\t\t<li class=\"header-main__nav-item\">\n\t\t\t\t<?php $type = get_field('content_type', $navItem); ?>\n\t\t\t\t\t<a class=\"header-main__nav-link header-main__nav-link--shop header-main__nav-link--<?php the_field('content_type', $navItem);?>\" href=\"<?php echo $navItem->url; ?>\"><?php echo $navItem->title; ?>\n\t\t\t\t\t\t<i class=\"fas fa-chevron-down\"></i>\n\t\t\t\t\t</a>\n\t\t\t\t\t<?php createSubMenu($navItem, 'header-main', true); ?>\n\t\t\t</li>\n\t\t<?php endforeach; ?>\n        <li class=\"header-main__nomadic\">\n        \t<p class=\"header-main__nomadic-text\">Try our electrical design service</p>\n        \t<p class=\"header-main__nomadic-title\">\n        \t    <a href=\"/nomadic-energy\">Nomadic Energy</a>\n\t\t\t</p>\n        \t<div class=\"header-main__nomadic-ad nomadic-ad\">\n        \t\t\t<div class=\"nomadic-ad__container\">\n        \t\t\t\t<div class=\"nomadic-ad__content\">\n        \t\t\t\t\t<h3 class=\"nomadic-ad__title\">We'll do the <span class=\"nomadic-ad__keyword\">calculations</span>, you convert the van</h3>\n        \t\t\t\t\t<p class=\"nomadic-ad__description\">Campervan electrical systems can be confusing. There are so many options that it\u2019s easy to spend days researching and still not feel confident. Our service makes off-grid energy simple.</p>\n        \t\t\t\t\t<a href=\"/nomadic-energy\" class=\"nomadic-ad__link\">\n        \t\t\t\t\t\tFind out more\n        \t\t\t\t\t</a>\n        \t\t\t\t</div>\n        \t\t\t\t<div class=\"nomadic-ad__image\">\n        \t\t\t\t    <blockquote class=\"nomadic-ad__quote\">\n        \t\t\t\t        <p>We\u2019ve just finished your wiring diagram, please find this attached. <br /><br />Your order is also ready, what day would suit you best for delivery?</p>\n        \t\t\t\t        <cite>Dale Comley</cite>\n        \t\t\t\t    </blockquote>\n        \t\t\t\t    <blockquote class=\"nomadic-ad__quote\">\n        \t\t\t\t        <p>There is an opportunity to save \u00a3430 if we review your high wattage appliance usage. <br /><br /> Would you be happy to only use your hairdryer when connected to shore hookup?</p>\n        \t\t\t\t        <cite>Charlie Low</cite>\n        \t\t\t\t    </blockquote>\n        \t\t\t\t\t<?php echo wp_get_attachment_image(9716, 'xl'); ?>\n        \t\t\t\t</div>\n        \t\t\t</div>\n        \t\t</div>\n        </li>\n\t    <li class=\"header-main__shop-search\">\n\t\t\t<div class=\"header-main__search-wrapper\">\n\t\t\t\t<?php echo do_shortcode('[fibosearch]'); ?>\n\t\t\t</div>\n\t\t\t<button class=\"header-main__search-btn icon--search\">\n\t\t\t\t<span class=\"elementor-screen-only\">Search</span>\n\t\t\t</button>\n\t\t</li>\n\t\t<li class=\"header-main__cart\">\n\t\t    <a href=\"#\" class=\"xoo-wsc-cart-trigger elementor-menu-cart__toggle_button header-main__add-to-cart icon--cart\">\n\t<span class=\"elementor-screen-only\">Cart</span> \n    <span class=\"cart-count <?php echo $cartCount ? '' : 'hide';?>\"><?php echo $cartCount; ?></span>\n</a>\n\t\t</li>\n\t</ul>\n</nav>"
+							},
+							"elements": [],
+							"isInner": false,
+							"widgetType": "dce-rawphp",
+							"elType": "widget"
+						}
+					],
+					"isInner": "",
+					"elType": "column"
+				}
+			],
+			"isInner": "",
+			"elType": "section"
+		}
+	],
+	"page_settings": { "eael_ext_toc_title": "Table of Contents" },
+	"version": "0.4",
+	"title": "Header",
+	"type": "header"
+}

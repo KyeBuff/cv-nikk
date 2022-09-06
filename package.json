@@ -1,0 +1,21 @@
+{
+  "name": "hello-theme-child",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@wpackio/scripts": "^6.4.0",
+    "postcss": "^8.4.16",
+    "sass": "^1.54.3",
+    "svgo": "^2.8.0",
+    "svgo-loader": "^3.0.0"
+  },
+  "scripts": {
+    "bootstrap": "wpackio-scripts bootstrap",
+    "build": "wpackio-scripts build",
+    "start": "wpackio-scripts start",
+    "archive": "wpackio-scripts pack"
+  },
+  "dependencies": {
+    "@wpackio/entrypoint": "^6.4.0"
+  }
+}

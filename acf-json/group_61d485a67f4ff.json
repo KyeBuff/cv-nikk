@@ -1,0 +1,44 @@
+{
+    "key": "group_61d485a67f4ff",
+    "title": "Website settings",
+    "fields": [
+        {
+            "key": "field_61d485b48b818",
+            "label": "Checkout Popup text",
+            "name": "checkout_pop-up_text",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Please note that Royal Mail 2nd class can take anywhere from 3 days to 2+ weeks to arrive. If you need your book to arrive urgently, please select Tracked 24 shipping.",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "general-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1653563294
+}

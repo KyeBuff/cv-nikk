@@ -1,0 +1,114 @@
+.nomadic-ad {
+	display: none;
+
+	@include dropdown($yellow);
+	top: 3.25rem;
+
+	text-align: left;
+	&__container {
+		display: flex;
+		max-width: rem(1200);
+		margin: 0 auto;
+
+		& > * {
+			flex: 1;
+		}
+	}
+
+	&__content {
+		margin-right: 4rem;
+		max-width: 30rem;
+	}
+
+	&__image {
+		position: relative;
+		height: 18rem;
+		@media screen and (min-width: 992px) {
+			align-self: flex-end;
+			bottom: -2rem;
+			flex: 1;
+		}
+		@media screen and (min-width: 1200px) {
+			align-self: flex-end;
+			bottom: -2rem;
+			flex: 1;
+			height: 25rem;
+		}
+		img {
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			object-position: bottom;
+		}
+	}
+
+	&__quote {
+		position: absolute;
+		margin: 0;
+		background-color: white;
+		padding: 1rem;
+		width: 10rem;
+		border-radius: rem(8);
+		&:first-of-type {
+			right: 0;
+			top: -4rem;
+			@media screen and (min-width: 1200px) {
+				top: -2rem;
+			}
+		}
+		&:last-of-type {
+			left: -4rem;
+			bottom: 2rem;
+		}
+
+		cite {
+			font-weight: bold;
+			font-style: normal;
+			&::before {
+				display: inline-block;
+				content: '';
+
+				height: 0.55rem;
+				width: 0.55rem;
+
+				margin-right: 0.5rem;
+
+				border-radius: 50%;
+				background-color: $success;
+			}
+		}
+	}
+
+	& &__title {
+		margin: 0 0 0.5rem;
+		font-size: rem(36);
+		font-weight: 700;
+		@media screen and (min-width: 1200px) {
+			font-size: rem(48);
+		}
+	}
+
+	&__description {
+		font-weight: 400;
+		font-size: rem(14);
+		margin: 1.5rem 0;
+		padding-right: 2rem;
+		@media screen and (min-width: 1200px) {
+			font-size: rem(16);
+		}
+	}
+
+	&__keyword {
+		color: $danger;
+	}
+
+	& &__link {
+		@include ctaBlue();
+	}
+}

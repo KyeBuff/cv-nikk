@@ -1,0 +1,21 @@
+.datasheets {
+	list-style: none;
+	padding-left: 0;
+	li {
+		margin-bottom: 0.5rem;
+	}
+	& &__link {
+		display: flex;
+		align-items: center;
+		padding: 0.25rem 0;
+		color: $black;
+		&::before {
+			display: inline-block;
+			content: '\f190';
+			font-family: 'Dashicons';
+			color: $danger;
+			font-size: 1.75rem;
+			margin-right: 0.5rem;
+		}
+	}
+}

@@ -1,0 +1,106 @@
+body.single-product {
+	.dynamic-content-for-elementor-title,
+	.woocommerce-breadcrumb,
+	.elementor-widget-woocommerce-product-price,
+	.elementor-widget-woocommerce-product-add-to-cart,
+	.woocommerce-product-details__short-description {
+		@media screen and (max-width: 991px) {
+			padding: 0 10px;
+		}
+	}
+	.elementor-container {
+		max-width: 1140px !important;
+	}
+	.related.products h2 {
+		@media screen and (max-width: 991px) {
+			padding-left: 1.25rem;
+		}
+	}
+	.dynamic-content-for-elementor-title {
+		font-family: 'Montserrat', Sans-serif;
+		font-size: 40px;
+		font-weight: 700;
+		text-transform: capitalize;
+		margin-top: 1rem;
+		@media screen and (min-width: 768px) {
+			display: none;
+		}
+	}
+	.product_title {
+		display: none;
+		@media screen and (min-width: 768px) {
+			display: block;
+		}
+	}
+	.elementor-widget-woocommerce-product-short-description {
+		@media screen and (max-width: 767px) {
+			margin-top: -20px;
+		}
+	}
+	div.product {
+		div.images {
+			@media screen and (max-width: 767px) {
+				margin-bottom: 0;
+			}
+		}
+		.woocommerce-product-gallery,
+		.product_title {
+			@media screen and (min-width: 768px) {
+				margin-top: 0;
+			}
+		}
+		.elementor-widget-woocommerce-product-images {
+			@media screen and (min-width: 768px) {
+				padding-right: 2rem;
+			}
+		}
+		.woocommerce-product-details__short-description {
+			*:last-child {
+				margin-bottom: 0;
+			}
+		}
+		p.price {
+			@media screen and (min-width: 470px) {
+				margin-bottom: 0.5rem;
+			}
+			del {
+				font-size: 1rem;
+			}
+			ins {
+				text-decoration: none;
+				font-weight: 500;
+			}
+			span.price {
+				del {
+					font-size: 1rem;
+				}
+				ins {
+					text-decoration: none;
+					font-weight: 500;
+				}
+			}
+		}
+		a.added_to_cart {
+			display: none;
+		}
+		p.stock {
+			display: inline-block;
+			text-transform: uppercase;
+			margin-top: 1.5rem;
+			padding: 0.75rem 2rem;
+			border: 1px solid $danger;
+			color: $danger;
+			font-weight: 500;
+			font-size: 0.9rem;
+		}
+		.elementor-widget-woocommerce-product-price
+			+ .elementor-widget-woocommerce-product-add-to-cart {
+			margin-top: rem(20);
+		}
+	}
+	.slick-track {
+		min-width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

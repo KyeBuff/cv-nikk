@@ -1,0 +1,19 @@
+.woocommerce .woocommerce-breadcrumb {
+	color: $black;
+	font-size: 0.875rem;
+	margin-bottom: -1rem;
+	a {
+		color: $black !important;
+		transition: opacity 0.3s ease-in-out;
+		opacity: 1;
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+}
+
+.single-product {
+	.woocommerce-breadcrumb {
+		margin-top: 0.5rem;
+	}
+}

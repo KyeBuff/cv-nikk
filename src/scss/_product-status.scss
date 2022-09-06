@@ -1,0 +1,45 @@
+.product__status {
+	display: block;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 1rem 0 1rem 0.25rem;
+	font-size: 0.75rem;
+}
+
+.product__status::before {
+	display: inline-block;
+	content: '';
+	font-weight: bold;
+	text-transform: uppercase;
+	position: relative;
+	left: -0.25rem;
+
+	height: 0.55rem;
+	width: 0.55rem;
+
+	border-radius: 50%;
+}
+
+.product__status--stock {
+	color: $success;
+}
+
+.product__status--stock::before {
+	background-color: $success;
+}
+
+.product__status--no-stock {
+	color: $danger;
+}
+
+.product__status--no-stock::before {
+	background-color: $danger;
+}
+
+.product__status--backorder {
+	color: $blue;
+}
+
+.product__status--backorder::before {
+	background-color: $blue;
+}

@@ -1,0 +1,136 @@
+.book-large {
+	display: none;
+	@include mobileSubNavSlider();
+	@include dropdown($yellow);
+	@media screen and (min-width: 991px) {
+		padding-bottom: 3rem;
+	}
+
+	@media screen and (max-width: 991px) {
+		&.active {
+			padding-top: 3rem;
+		}
+	}
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		max-width: rem(1200);
+		margin: 0 auto;
+
+		& > * {
+			flex: 1;
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+	}
+
+	&__image {
+		display: flex;
+		justify-content: flex-end;
+		margin: 0 2rem;
+		img {
+			height: 100%;
+			width: auto;
+			max-height: rem(243);
+			box-shadow: -14px 3px 10px -5px #3e3e3e, -20px 0px 12px -2px #727272,
+				-13px 0px 20px -10px #cdcdcd;
+		}
+	}
+
+	&__video {
+		flex: 1.5;
+		display: flex;
+		justify-content: flex-end;
+		@media screen and (min-width: 992px) {
+			margin: 0 0 0 2rem;
+		}
+		@media screen and (min-width: 1200px) {
+			flex: 1.25;
+			margin: 0;
+		}
+		img {
+			object-fit: cover;
+			height: 100%;
+			max-height: rem(243);
+			object-position: center top;
+			box-shadow: -14px 3px 10px -5px #3e3e3e, -20px 0px 12px -2px #727272,
+				-13px 0px 20px -10px #cdcdcd;
+		}
+	}
+
+	&__image,
+	&__video {
+		@media screen and (max-width: 991px) {
+			display: none;
+		}
+	}
+
+	& &__title {
+		margin: 0 0 0.5rem;
+		font-size: rem(24);
+		font-weight: 700;
+		@media screen and (min-width: 1200px) {
+			min-width: max-content;
+		}
+	}
+
+	&__description {
+		font-weight: 400;
+		font-size: 0.875rem;
+		line-height: 1.2;
+	}
+
+	& &__link {
+		@include ctaDanger();
+	}
+
+	.cr-badge.badge-vs {
+		filter: unset;
+		background-color: transparent !important;
+		margin-bottom: 1rem;
+
+		.badge__logo {
+			display: none;
+		}
+		.badge__store {
+			display: none;
+		}
+		.badge__rating {
+			display: none;
+			& + .badge__stars {
+				margin-left: 0;
+			}
+		}
+		.badge__star {
+			height: 1.75rem;
+			width: 1.75rem;
+		}
+		.badge__star-icon--empty {
+			background-image: url(../../icons/star-empty.svg);
+		}
+		.badge__reviews {
+			background-color: transparent;
+			color: $black;
+			font-family: Montserrat;
+			font-size: 0.75rem;
+			padding: 0;
+			position: relative;
+			top: 0.2rem;
+		}
+	}
+	.cr-badge {
+		padding: 0;
+		.verified {
+			display: none;
+		}
+		& + a {
+			cursor: default;
+		}
+	}
+
+	.header-main__nav-item--parent {
+		display: none !important;
+	}
+}

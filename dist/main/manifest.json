@@ -1,0 +1,43 @@
+{
+  "main.css": "main/main-4efdcd68.css",
+  "main.css.map": "main/main-4efdcd68.css.map",
+  "main.js": "main/main-7d630c9d.js",
+  "main.js.map": "main/main-7d630c9d.js.map",
+  "main/assets/cross.svg": "main/assets/cross-bdcfc165.svg",
+  "main/assets/delivery-red.svg": "main/assets/delivery-red-81bdc745.svg",
+  "main/assets/delivery.svg": "main/assets/delivery-effc2afd.svg",
+  "main/assets/down_arrow.svg": "main/assets/down_arrow-82b1455a.svg",
+  "main/assets/down_arrow_grey.svg": "main/assets/down_arrow_grey-ac31e6e7.svg",
+  "main/assets/filter.svg": "main/assets/filter-58683ff3.svg",
+  "main/assets/more.svg": "main/assets/more-3fccb678.svg",
+  "main/assets/nomadic-energy.svg": "main/assets/nomadic-energy-661a36b2.svg",
+  "main/assets/price.svg": "main/assets/price-db3d0fb4.svg",
+  "main/assets/search.svg": "main/assets/search-d64f588e.svg",
+  "main/assets/shop.svg": "main/assets/shop-3dd544e1.svg",
+  "main/assets/sort.svg": "main/assets/sort-579ab64f.svg",
+  "main/assets/star-empty.svg": "main/assets/star-empty-db533897.svg",
+  "main/assets/trash-red.svg": "main/assets/trash-red-a1b9fc08.svg",
+  "main/assets/trash.svg": "main/assets/trash-83c94fa4.svg",
+  "runtime.js": "main/runtime-c7e332e1.js",
+  "runtime.js.map": "main/runtime-c7e332e1.js.map",
+  "wpackioEp": {
+    "main": {
+      "assets": {
+        "js": [
+          "main/runtime-c7e332e1.js",
+          "main/main-7d630c9d.js"
+        ],
+        "js.map": [
+          "main/runtime-c7e332e1.js.map",
+          "main/main-7d630c9d.js.map"
+        ],
+        "css": [
+          "main/main-4efdcd68.css"
+        ],
+        "css.map": [
+          "main/main-4efdcd68.css.map"
+        ]
+      }
+    }
+  }
+}

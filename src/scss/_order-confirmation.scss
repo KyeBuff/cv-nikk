@@ -1,0 +1,133 @@
+.woocommerce-order-received {
+	.elementor-heading-title {
+		display: none;
+	}
+	.woocommerce-thankyou-order-received {
+		text-align: center;
+		font-weight: bold;
+		margin-top: 2rem;
+		font-size: rem(40);
+		margin-bottom: 0;
+	}
+	.woocommerce-order-overview__order {
+		font-size: rem(32);
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+	.woocommerce {
+		.woocommerce-order {
+			table.order_details {
+				padding: 2rem;
+				background: $grey;
+				border: 1px solid #ededed;
+				border-radius: 4px;
+				max-width: 35rem;
+				margin: 0 auto;
+				thead {
+					display: none;
+				}
+				tbody,
+				tfoot {
+					td,
+					th {
+						background-color: transparent;
+						border: none;
+						width: unset;
+						&:hover {
+							background-color: transparent;
+						}
+						.woocommerce-Price-amount {
+							font-size: rem(16);
+						}
+						a {
+							color: $black;
+						}
+					}
+				}
+				tbody {
+					tr {
+						display: grid;
+						grid-template-columns: 1fr 4rem;
+						justify-items: end;
+						td {
+							min-width: fit-content;
+							padding-left: 0;
+							padding-right: 0;
+							&:last-child {
+								width: unset;
+								min-width: fit-content;
+							}
+						}
+						&:last-child {
+							@media screen and (max-width: 767px) {
+								padding-bottom: 2rem;
+							}
+						}
+					}
+				}
+				tfoot {
+					tr {
+						display: flex;
+						justify-content: space-between;
+						&:first-child {
+							border-top: 1px solid $black;
+							padding-top: 2rem;
+						}
+						th {
+							width: fit-content;
+							max-width: 66.6%;
+							padding-left: 0;
+							padding-right: 0;
+						}
+						td {
+							&:last-child {
+								padding-right: 0;
+								text-align: right;
+							}
+						}
+						&:last-of-type {
+							.woocommerce-Price-amount {
+								font-size: rem(24);
+							}
+						}
+					}
+				}
+			}
+			table.woocommerce-table--order-downloads {
+				tbody {
+					tr {
+						display: flex;
+						flex-direction: column;
+						padding-bottom: 0;
+						&:last-child {
+							padding-bottom: 0;
+						}
+					}
+				}
+				td {
+					&.download-remaining,
+					&.download-expires {
+						display: none;
+					}
+					&.download-product {
+						margin-bottom: 0;
+					}
+					&.download-file {
+						grid-row: 2 / 3;
+					}
+				}
+			}
+		}
+	}
+}
+
+.woocommerce-order-details__title,
+section.woocommerce-customer-details {
+	display: none;
+}
+
+.woocommerce-order-details {
+	p.order-again {
+		display: none;
+	}
+}

@@ -1,0 +1,113 @@
+.dgwt-wcas-suggestion-product .dgwt-wcas-si {
+	width: 5rem;
+	height: 5rem;
+}
+
+.dgwt-wcas-content-wrapp {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-left: 1rem;
+}
+
+.dgwt-wcas-sp {
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin-top: 0.5rem;
+}
+
+.dgwt-wcas-has-img .dgwt-wcas-sp > del {
+	display: none;
+}
+
+.dgwt-wcas-sp ins {
+	text-decoration: none;
+}
+
+.dgwt-wcas-search-wrapp {
+	margin: 0;
+}
+.dgwt-wcas-no-submit .dgwt-wcas-ico-magnifier {
+	left: auto;
+	right: 0.75rem;
+}
+.dgwt-wcas-no-submit
+	.dgwt-wcas-sf-wrapp
+	input[type='search'].dgwt-wcas-search-input {
+	border: 0.1rem solid $black;
+	font-size: 0.9rem;
+	padding: 1rem 3rem 1rem 1rem;
+	border-radius: 0.25rem;
+}
+.dgwt-wcas-sf-wrapp.has-value .dgwt-wcas-ico-magnifier {
+	display: none;
+}
+
+.dgwt-wcas-no-submit
+	.dgwt-wcas-sf-wrapp
+	input[type='search'].dgwt-wcas-search-input::placeholder {
+	font-style: normal;
+}
+
+.dgwt-wcas-active {
+	&.focused .dgwt-wcas-ico-magnifier {
+		display: none;
+	}
+}
+
+.woocommerce-breadcrumb {
+	a[href*='our-shop'] {
+		display: none;
+	}
+}
+
+.search-results {
+	.woocommerce-breadcrumb {
+		@include heading-1();
+		margin-bottom: -20px;
+		@media screen and (min-width: 768px) {
+			margin-top: -1.25rem;
+			margin-bottom: 0;
+		}
+	}
+	@media screen and (min-width: 768px) {
+		.category-title {
+			display: none;
+		}
+		.products-wrapper {
+			margin-top: -2rem;
+		}
+		.category-filters {
+			margin-top: -1rem;
+		}
+	}
+}
+
+.dgwt-wcas-suggestions-wrapp {
+	@media screen and (min-width: 992px) {
+		z-index: 99 !important;
+	}
+	@media screen and (max-width: 991px) {
+		border: none;
+		padding-bottom: 1rem;
+	}
+	@media screen and (min-width: 992px) {
+		padding-top: 1rem;
+		min-width: 16rem;
+	}
+}
+.dgwt-wcas-suggestion-more {
+	@media screen and (max-width: 991px) {
+		font-weight: bold;
+		color: black !important;
+	}
+}
+.dgwt-wcas-si img {
+	@media screen and (max-width: 991px) {
+		height: 100%;
+		max-height: 100%;
+		object-fit: scale-down;
+		border: none;
+	}
+}

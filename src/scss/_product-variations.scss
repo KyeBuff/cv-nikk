@@ -1,0 +1,61 @@
+.woocommerce div.product form.cart {
+	padding-bottom: 2rem;
+	@media screen and (min-width: 992px) {
+		padding-bottom: 0;
+	}
+	div.quantity {
+		margin-right: 0.5rem;
+		.qty {
+			padding: 0;
+			height: 2.5rem;
+			width: 2.5rem;
+			@media screen and (min-width: 768px) {
+				text-indent: 1rem;
+			}
+		}
+	}
+	.single_add_to_cart_button {
+		@include ctaYellow();
+	}
+	.variations {
+		margin: 0 0 rem(20);
+		@media screen and (min-width: 470px) {
+			max-width: 25rem;
+		}
+		@media screen and (min-width: 768px) {
+			max-width: unset;
+		}
+
+		tbody {
+			tr {
+				display: flex;
+				flex-direction: column;
+				@media screen and (min-width: 470px) {
+					flex-direction: row;
+					align-items: center;
+				}
+				th,
+				td {
+					background-color: transparent;
+				}
+				td {
+					padding-top: 0;
+					&.label {
+						font-size: 1rem;
+						padding-right: 1.5rem;
+						@media screen and (max-width: 469px) {
+							display: none;
+						}
+					}
+					&.value {
+						flex: 1;
+					}
+					@media screen and (max-width: 469px) {
+						padding-top: 0.25rem;
+						padding-bottom: 0.25rem;
+					}
+				}
+			}
+		}
+	}
+}

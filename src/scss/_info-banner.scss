@@ -1,0 +1,47 @@
+.info-banner-wrapper {
+	display: none;
+	.elementor-container {
+		min-width: 100%;
+	}
+	@media screen and (min-width: 992px) {
+		display: block;
+	}
+}
+
+.info-banner {
+	@media screen and (min-width: 992px) {
+		position: relative;
+		z-index: 10000;
+		margin: -10px;
+		background-color: #ccc;
+
+		&__container {
+			display: flex;
+			justify-content: space-between;
+			padding: 0.5rem 2.5vw;
+
+			margin: 0 auto;
+		}
+	}
+	@media screen and (min-width: 1200px) {
+		&__container {
+			padding: 0.5rem 5vw;
+		}
+	}
+	& &__delivery,
+	& &__link,
+	& &__price-match {
+		margin: 0;
+		background-position: right center;
+		font-size: 0.8125rem;
+	}
+	&__price-match {
+		padding-right: 1.5rem;
+	}
+	&__link {
+		padding-right: 1.25rem;
+	}
+	&__delivery {
+		padding-right: 2rem;
+	}
+}

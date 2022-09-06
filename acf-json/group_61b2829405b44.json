@@ -1,0 +1,261 @@
+{
+    "key": "group_61b2829405b44",
+    "title": "Menu fields",
+    "fields": [
+        {
+            "key": "field_61b287418cbdc",
+            "label": "Type",
+            "name": "content_type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "book": "Book Advert - small",
+                "book-large": "Book Advert - large",
+                "ecologi": "Ecologi",
+                "image-text": "Image, title and text",
+                "list": "List",
+                "nomadic": "Nomadic Energy"
+            },
+            "default_value": false,
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_61bc9c73ce172",
+            "label": "Icon",
+            "name": "menu_item_icon",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61b287418cbdc",
+                        "operator": "==empty"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_61b287418cbdc",
+                        "operator": "==",
+                        "value": "list"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_61b286f4234e1",
+            "label": "Title",
+            "name": "info_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61b287418cbdc",
+                        "operator": "==",
+                        "value": "image-text"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_61b287418cbdc",
+                        "operator": "==",
+                        "value": "ecologi"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_61b287418cbdc",
+                        "operator": "==",
+                        "value": "book-large"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61b2869d391fb",
+            "label": "Paragraph text",
+            "name": "info_text",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61b287418cbdc",
+                        "operator": "==",
+                        "value": "book"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_61b287418cbdc",
+                        "operator": "==",
+                        "value": "image-text"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_61b287418cbdc",
+                        "operator": "==",
+                        "value": "ecologi"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_61b287418cbdc",
+                        "operator": "==",
+                        "value": "book-large"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_61b2871158ad6",
+            "label": "Image",
+            "name": "info_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61b287418cbdc",
+                        "operator": "==",
+                        "value": "book"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_61b287418cbdc",
+                        "operator": "==",
+                        "value": "image-text"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_61b287418cbdc",
+                        "operator": "==",
+                        "value": "ecologi"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_61b287418cbdc",
+                        "operator": "==",
+                        "value": "book-large"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_61bdb70e6f288",
+            "label": "Video",
+            "name": "info_video",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61b287418cbdc",
+                        "operator": "==",
+                        "value": "book-large"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": "mp4"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "nav_menu_item",
+                "operator": "==",
+                "value": "all"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1645979534
+}

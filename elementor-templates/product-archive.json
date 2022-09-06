@@ -1,0 +1,647 @@
+{
+	"content": [
+		{
+			"id": "16306c49",
+			"settings": {
+				"eae_slider_delay": "5000",
+				"gradient_color_list": [
+					{ "_id": "99f2d9f" },
+					{ "eae_animated_gradient_color": "#b800c9", "_id": "980587f" },
+					{ "eae_animated_gradient_color": "#e57600", "_id": "2206a84" }
+				],
+				"content_position": "space-between",
+				"structure": "20",
+				"margin": {
+					"unit": "rem",
+					"top": "2",
+					"right": 0,
+					"bottom": "0",
+					"left": 0,
+					"isLinked": false
+				}
+			},
+			"elements": [
+				{
+					"id": "70767208",
+					"settings": {
+						"_column_size": 50,
+						"_inline_size": 29.908,
+						"eae_slider_delay": "5000",
+						"gradient_color_list": [
+							{ "_id": "ab84b30" },
+							{ "eae_animated_gradient_color": "#b800c9", "_id": "469691b" },
+							{ "eae_animated_gradient_color": "#e57600", "_id": "e8915a0" }
+						]
+					},
+					"elements": [
+						{
+							"id": "26728ed8",
+							"settings": {
+								"custom_php": "woocommerce_breadcrumb( [\n\t'delimiter' => ' / ',\n\t'home' => false\n] );",
+								"_margin": {
+									"unit": "px",
+									"top": "0",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": true
+								}
+							},
+							"elements": [],
+							"isInner": false,
+							"widgetType": "dce-rawphp",
+							"elType": "widget"
+						},
+						{
+							"id": "5a74177c",
+							"settings": {
+								"custom_php": "?>\n<h1 class='heading-1 category-title'>\n<?php\n$title = get_queried_object()->name;\necho str_replace(\"/\",\"/<wbr></wbr>\", $title);\n?>\n</h1>"
+							},
+							"elements": [],
+							"isInner": false,
+							"widgetType": "dce-rawphp",
+							"elType": "widget"
+						}
+					],
+					"isInner": false,
+					"elType": "column"
+				},
+				{
+					"id": "4a65e416",
+					"settings": {
+						"_column_size": 50,
+						"_inline_size": 70.048,
+						"eae_slider_delay": "5000",
+						"gradient_color_list": [
+							{ "_id": "38ad5c3" },
+							{ "eae_animated_gradient_color": "#b800c9", "_id": "4a4d774" },
+							{ "eae_animated_gradient_color": "#e57600", "_id": "35d21a8" }
+						],
+						"content_position": "top",
+						"align": "flex-end"
+					},
+					"elements": [
+						{
+							"id": "60e75f51",
+							"settings": {
+								"custom_php": "?>\n<div class=\"archive-filters\">\n    <div class=\"mobile-filters\">\n        <div>\n          <button id=\"btn-filter\" class=\"mobile-filters__btn\">\n            Filter\n          </button>\n          <form class=\"woocommerce-ordering\" method=\"get\">\n            \n        \t<select name=\"orderby\" class=\"orderby\" aria-label=\"<?php esc_attr_e( 'Shop order', 'woocommerce' ); ?>\">\n        \t\t<?php foreach ( apply_filters(\n        \t\t\t'woocommerce_catalog_orderby',\n        \t\t\tarray(\n        \t\t\t\t'menu_order' => __( 'Sort', 'woocommerce' ),\n        \t\t\t\t'popularity' => __( 'Popularity', 'woocommerce' ),\n        \t\t\t\t'rating'     => __( 'Average rating', 'woocommerce' ),\n        \t\t\t\t'date'       => __( 'Latest', 'woocommerce' ),\n        \t\t\t\t'price'      => __( 'Price: low to high', 'woocommerce' ),\n        \t\t\t\t'price-desc' => __( 'Price: high to low', 'woocommerce' ),\n        \t\t\t)\n        \t\t) as $id => $name ) : ?>\n        \t\t\t<option value=\"<?php echo esc_attr( $id ); ?>\"\n              ><?php echo esc_html( $name ); ?></option>\n        \t\t<?php endforeach; ?>\n        \t</select>\n        \t<input type=\"hidden\" name=\"paged\" value=\"1\" />\n        \t<?php wc_query_string_form_fields( null, array( 'orderby', 'submit', 'paged', 'product-page' ) ); ?>\n            </form>\n        </div>\n        <p class=\"woocommerce-result-count\">\n    \t<?php\n    \t    $total = wc_get_loop_prop( 'total' );\n    \t\tprintf( _n( '%d products', '%d products', $total, 'woocommerce' ), $total );\n    \n    \t?>\n        </p>\n    </div>\n    <div class=\"product-search-form\">\n        <?php echo do_shortcode('[fibosearch]'); ?>\n    </div>\n</div>"
+							},
+							"elements": [],
+							"isInner": false,
+							"widgetType": "dce-rawphp",
+							"elType": "widget"
+						}
+					],
+					"isInner": false,
+					"elType": "column"
+				}
+			],
+			"isInner": false,
+			"elType": "section"
+		},
+		{
+			"id": "1c519aa",
+			"settings": {
+				"eae_slider_delay": "5000",
+				"gradient_color_list": [
+					{ "_id": "2062819" },
+					{ "eae_animated_gradient_color": "#b800c9", "_id": "fd0fe53" },
+					{ "eae_animated_gradient_color": "#e57600", "_id": "63fc057" }
+				],
+				"margin": {
+					"unit": "px",
+					"top": "0",
+					"right": 0,
+					"bottom": "20",
+					"left": 0,
+					"isLinked": false
+				},
+				"structure": "20"
+			},
+			"elements": [
+				{
+					"id": "482df281",
+					"settings": {
+						"_column_size": 50,
+						"_inline_size": 28.947,
+						"eae_slider_delay": "5000",
+						"gradient_color_list": [
+							{ "_id": "bb4085c" },
+							{ "eae_animated_gradient_color": "#b800c9", "_id": "93dbf63" },
+							{ "eae_animated_gradient_color": "#e57600", "_id": "fce2cfa" }
+						],
+						"background_background": "classic",
+						"__globals__": { "background_color": "" },
+						"space_between_widgets": 0,
+						"css_classes": "category-filters"
+					},
+					"elements": [
+						{
+							"id": "2acc8c0f",
+							"settings": {
+								"sidebar": "sidebar-1",
+								"_margin": {
+									"unit": "px",
+									"top": "0",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": false
+								},
+								"_element_id": "widget-id",
+								"_css_classes": "widget-class",
+								"custom_css": "li {\n  list-style-type: '';\n  padding-inline-start: 0ch;\n}\n\nwidget-class {\n  font-size: 15px;\n}",
+								"_padding": {
+									"unit": "px",
+									"top": "0",
+									"right": "0",
+									"bottom": "10",
+									"left": "10",
+									"isLinked": false
+								},
+								"_background_background": "classic",
+								"__globals__": {
+									"_background_color": "globals/colors?id=46684db"
+								}
+							},
+							"elements": [],
+							"isInner": false,
+							"widgetType": "sidebar",
+							"elType": "widget"
+						},
+						{
+							"id": "2abbbb2f",
+							"settings": {
+								"sidebar": "sidebar-2",
+								"_margin": {
+									"unit": "px",
+									"top": "0",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": false
+								},
+								"_css_classes": "widget-class",
+								"custom_css": "li {\n  list-style-type: '';\n  padding-inline-start: 0ch;\n}\n\nwidget-class {\n  font-size: 15px;\n}",
+								"_padding": {
+									"unit": "px",
+									"top": "10",
+									"right": "0",
+									"bottom": "10",
+									"left": "10",
+									"isLinked": false
+								},
+								"_background_background": "classic",
+								"__globals__": {
+									"_background_color": "globals/colors?id=46684db"
+								}
+							},
+							"elements": [],
+							"isInner": false,
+							"widgetType": "sidebar",
+							"elType": "widget"
+						},
+						{
+							"id": "4581eb9e",
+							"settings": {
+								"sidebar": "sidebar-3",
+								"_margin": {
+									"unit": "px",
+									"top": "0",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": false
+								},
+								"_css_classes": "widget-class",
+								"custom_css": "li {\n  list-style-type: '';\n  padding-inline-start: 0ch;\n}\n\nwidget-class {\n  font-size: 15px;\n}",
+								"_padding": {
+									"unit": "px",
+									"top": "10",
+									"right": "0",
+									"bottom": "10",
+									"left": "10",
+									"isLinked": false
+								},
+								"_background_background": "classic",
+								"__globals__": {
+									"_background_color": "globals/colors?id=46684db"
+								}
+							},
+							"elements": [],
+							"isInner": false,
+							"widgetType": "sidebar",
+							"elType": "widget"
+						},
+						{
+							"id": "59c62bf",
+							"settings": {
+								"sidebar": "sidebar-4",
+								"_margin": {
+									"unit": "px",
+									"top": "0",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": false
+								},
+								"_css_classes": "widget-class",
+								"custom_css": "li {\n  list-style-type: '';\n  padding-inline-start: 0ch;\n}\n\nwidget-class {\n  font-size: 15px;\n}",
+								"_padding": {
+									"unit": "px",
+									"top": "10",
+									"right": "0",
+									"bottom": "10",
+									"left": "10",
+									"isLinked": false
+								},
+								"_background_background": "classic",
+								"__globals__": {
+									"_background_color": "globals/colors?id=46684db"
+								}
+							},
+							"elements": [],
+							"isInner": false,
+							"widgetType": "sidebar",
+							"elType": "widget"
+						},
+						{
+							"id": "2b02ffd8",
+							"settings": {
+								"sidebar": "sidebar-5",
+								"_margin": {
+									"unit": "px",
+									"top": "0",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": false
+								},
+								"_css_classes": "widget-class",
+								"custom_css": "li {\n  list-style-type: '';\n  padding-inline-start: 0ch;\n}\n\nwidget-class {\n  font-size: 15px;\n}",
+								"_padding": {
+									"unit": "px",
+									"top": "10",
+									"right": "0",
+									"bottom": "10",
+									"left": "10",
+									"isLinked": false
+								},
+								"_background_background": "classic",
+								"__globals__": {
+									"_background_color": "globals/colors?id=46684db"
+								}
+							},
+							"elements": [],
+							"isInner": false,
+							"widgetType": "sidebar",
+							"elType": "widget"
+						},
+						{
+							"id": "4f81efca",
+							"settings": {
+								"sidebar": "sidebar-6",
+								"_margin": {
+									"unit": "px",
+									"top": "0",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": false
+								},
+								"_css_classes": "widget-class",
+								"custom_css": "li {\n  list-style-type: '';\n  padding-inline-start: 0ch;\n}\n\nwidget-class {\n  font-size: 15px;\n}",
+								"_padding": {
+									"unit": "px",
+									"top": "10",
+									"right": "0",
+									"bottom": "10",
+									"left": "10",
+									"isLinked": false
+								},
+								"_background_background": "classic",
+								"__globals__": {
+									"_background_color": "globals/colors?id=46684db"
+								}
+							},
+							"elements": [],
+							"isInner": false,
+							"widgetType": "sidebar",
+							"elType": "widget"
+						},
+						{
+							"id": "5b5a0fd8",
+							"settings": {
+								"sidebar": "sidebar-7",
+								"_margin": {
+									"unit": "px",
+									"top": "0",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": false
+								},
+								"_css_classes": "widget-class",
+								"custom_css": "li {\n  list-style-type: '';\n  padding-inline-start: 0ch;\n}\n\nwidget-class {\n  font-size: 15px;\n}",
+								"_padding": {
+									"unit": "px",
+									"top": "10",
+									"right": "0",
+									"bottom": "10",
+									"left": "10",
+									"isLinked": false
+								},
+								"_background_background": "classic",
+								"__globals__": {
+									"_background_color": "globals/colors?id=46684db"
+								}
+							},
+							"elements": [],
+							"isInner": false,
+							"widgetType": "sidebar",
+							"elType": "widget"
+						},
+						{
+							"id": "2e05a5e2",
+							"settings": {
+								"sidebar": "sidebar-8",
+								"_margin": {
+									"unit": "px",
+									"top": "0",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": false
+								},
+								"_css_classes": "widget-class",
+								"custom_css": "li {\n  list-style-type: '';\n  padding-inline-start: 0ch;\n}\n\nwidget-class {\n  font-size: 15px;\n}",
+								"_padding": {
+									"unit": "px",
+									"top": "10",
+									"right": "0",
+									"bottom": "10",
+									"left": "10",
+									"isLinked": false
+								},
+								"_background_background": "classic",
+								"__globals__": {
+									"_background_color": "globals/colors?id=46684db"
+								}
+							},
+							"elements": [],
+							"isInner": false,
+							"widgetType": "sidebar",
+							"elType": "widget"
+						},
+						{
+							"id": "5861f697",
+							"settings": {
+								"sidebar": "sidebar-9",
+								"_margin": {
+									"unit": "px",
+									"top": "0",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": false
+								},
+								"_css_classes": "widget-class",
+								"custom_css": "li {\n  list-style-type: '';\n  padding-inline-start: 0ch;\n}\n\nwidget-class {\n  font-size: 15px;\n}",
+								"_padding": {
+									"unit": "px",
+									"top": "10",
+									"right": "0",
+									"bottom": "10",
+									"left": "10",
+									"isLinked": false
+								},
+								"_background_background": "classic",
+								"__globals__": {
+									"_background_color": "globals/colors?id=46684db"
+								}
+							},
+							"elements": [],
+							"isInner": false,
+							"widgetType": "sidebar",
+							"elType": "widget"
+						},
+						{
+							"id": "7bf49ddd",
+							"settings": {
+								"sidebar": "sidebar-10",
+								"_margin": {
+									"unit": "px",
+									"top": "0",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": false
+								},
+								"_css_classes": "widget-class",
+								"custom_css": "li {\n  list-style-type: '';\n  padding-inline-start: 0ch;\n}\n\nwidget-class {\n  font-size: 15px;\n}",
+								"_padding": {
+									"unit": "px",
+									"top": "10",
+									"right": "0",
+									"bottom": "10",
+									"left": "10",
+									"isLinked": false
+								},
+								"_background_background": "classic",
+								"__globals__": {
+									"_background_color": "globals/colors?id=46684db"
+								}
+							},
+							"elements": [],
+							"isInner": false,
+							"widgetType": "sidebar",
+							"elType": "widget"
+						},
+						{
+							"id": "142e5a35",
+							"settings": {
+								"sidebar": "sidebar-11",
+								"_margin": {
+									"unit": "px",
+									"top": "0",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": false
+								},
+								"_css_classes": "widget-class",
+								"custom_css": "li {\n  list-style-type: '';\n  padding-inline-start: 0ch;\n}\n\nwidget-class {\n  font-size: 15px;\n}",
+								"_padding": {
+									"unit": "px",
+									"top": "10",
+									"right": "0",
+									"bottom": "10",
+									"left": "10",
+									"isLinked": false
+								},
+								"_background_background": "classic",
+								"__globals__": {
+									"_background_color": "globals/colors?id=46684db"
+								}
+							},
+							"elements": [],
+							"isInner": false,
+							"widgetType": "sidebar",
+							"elType": "widget"
+						},
+						{
+							"id": "6a51884",
+							"settings": {
+								"sidebar": "sidebar-12",
+								"_margin": {
+									"unit": "px",
+									"top": "0",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": false
+								},
+								"_css_classes": "widget-class",
+								"custom_css": "li {\n  list-style-type: '';\n  padding-inline-start: 0ch;\n}\n\nwidget-class {\n  font-size: 15px;\n}",
+								"_padding": {
+									"unit": "px",
+									"top": "10",
+									"right": "0",
+									"bottom": "10",
+									"left": "10",
+									"isLinked": false
+								},
+								"_background_background": "classic",
+								"__globals__": {
+									"_background_color": "globals/colors?id=46684db"
+								}
+							},
+							"elements": [],
+							"isInner": false,
+							"widgetType": "sidebar",
+							"elType": "widget"
+						},
+						{
+							"id": "32ef1aa6",
+							"settings": {
+								"html": "<section class=\"filters-ad\">\n\t<header>\n\t\t<h3 class=\"style-a2\">Not sure what you need?</h3>\n\t</header>\n\t<p class=\"style-a3\">Our free electrical design service makes off-grid energy simple</p>\n\t<img src=\"/wp-content/uploads/2021/01/components-21.png\" alt=\"Electrical system illustration\">\n\t<a href=\"/nomadic-energy\" class=\" filters-ad__btn cta-button\">Find out more</a>\n</section>"
+							},
+							"elements": [],
+							"isInner": false,
+							"widgetType": "html",
+							"elType": "widget"
+						}
+					],
+					"isInner": false,
+					"elType": "column"
+				},
+				{
+					"id": "6b258a01",
+					"settings": {
+						"_column_size": 50,
+						"_inline_size": 71.053,
+						"eae_slider_delay": "5000",
+						"gradient_color_list": [
+							{ "_id": "bb4085c" },
+							{ "eae_animated_gradient_color": "#b800c9", "_id": "93dbf63" },
+							{ "eae_animated_gradient_color": "#e57600", "_id": "fce2cfa" }
+						],
+						"css_classes": "products-wrapper"
+					},
+					"elements": [
+						{
+							"id": "2a85caec",
+							"settings": {
+								"custom_php": "$cat = get_queried_object();\n$thumbnail_id = get_term_meta( $cat->term_id, 'thumbnail_id', true );\n$image = wp_get_attachment_url( $thumbnail_id );\n$category_description = category_description();\n?>\n\n<?php if ( $category_description): ?>\n<div class=\"category-description\">\n\t<?php if ( $image): ?>\n\t\t<img src=\"<?php echo $image ?>\" alt=\"<?php echo $cat->name ?>\" />\n\t<?php endif; ?>\n\t<?php echo $category_description; ?>\n</div>\n<?php endif; ?>"
+							},
+							"elements": [],
+							"isInner": false,
+							"widgetType": "dce-rawphp",
+							"elType": "widget"
+						},
+						{
+							"id": "679e477d",
+							"settings": {
+								"column_gap": { "unit": "px", "size": 34, "sizes": [] },
+								"title_typography_typography": "custom",
+								"title_typography_font_size": {
+									"unit": "px",
+									"size": 16,
+									"sizes": []
+								},
+								"star_size": { "unit": "em", "size": 1, "sizes": [] },
+								"price_typography_typography": "custom",
+								"price_typography_font_size": {
+									"unit": "px",
+									"size": 15,
+									"sizes": []
+								},
+								"columns": 3,
+								"rows": 200,
+								"allow_order": "yes",
+								"show_result_count": "yes",
+								"query_post_type": "current_query",
+								"star_color": "#FFCC05",
+								"button_background_color": "#FFCC05",
+								"button_typography_typography": "custom",
+								"button_typography_font_family": "Montserrat",
+								"button_typography_font_weight": "400",
+								"button_typography_text_transform": "uppercase",
+								"button_border_radius": {
+									"unit": "px",
+									"top": "1",
+									"right": "1",
+									"bottom": "1",
+									"left": "1",
+									"isLinked": true
+								},
+								"button_text_padding": {
+									"unit": "px",
+									"top": "10",
+									"right": "17",
+									"bottom": "10",
+									"left": "17",
+									"isLinked": false
+								},
+								"__globals__": {
+									"star_color": "globals/colors?id=primary",
+									"button_background_color": "globals/colors?id=primary",
+									"button_typography_typography": "",
+									"button_text_color": "globals/colors?id=text",
+									"old_price_color": "globals/colors?id=text",
+									"price_color": "globals/colors?id=text"
+								},
+								"paginate": "yes"
+							},
+							"elements": [],
+							"isInner": false,
+							"widgetType": "woocommerce-products",
+							"elType": "widget"
+						},
+						{
+							"id": "21c49986",
+							"settings": {
+								"html": "<section class=\"help-banner\">\n\t<header>\n\t\t<h3 class=\"style-a2\">Not sure what you need?</h3>\n\t</header>\n\t<p class=\"style-a3\">Our free electrical design service makes off-grid energy simple</p>\n\t<a href=\"/nomadic-energy\" class=\"cta-button help-banner__btn\">Find out more</a>\n</section>"
+							},
+							"elements": [],
+							"isInner": false,
+							"widgetType": "html",
+							"elType": "widget"
+						}
+					],
+					"isInner": false,
+					"elType": "column"
+				}
+			],
+			"isInner": false,
+			"elType": "section"
+		}
+	],
+	"page_settings": {
+		"eael_ext_toc_title": "Table of Contents",
+		"preview_id": "0"
+	},
+	"version": "0.4",
+	"title": "Shop sprint update",
+	"type": "product-archive"
+}

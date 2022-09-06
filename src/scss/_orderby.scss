@@ -1,0 +1,41 @@
+.orderby {
+  font-weight: bold;
+  font-size: 0.75rem;
+  color: $black;
+}
+
+.mobile-filters .orderby {
+  background-color: white;
+  border: 0.1rem solid $black;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding-right: 0;
+  border-radius: .25rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari and Chrome */
+  appearance:none;
+  background-image: url(../../icons/down_arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  background-position: calc(100% - .5rem) center;
+}
+
+@media screen and (max-width: 767px) {  
+  .mobile-filters .orderby {
+    padding-left: 2.5rem;
+    background-image: url(../../icons/sort.svg);
+    background-repeat: no-repeat;
+    background-size: 4rem;
+    background-position: -0.5rem center;
+  }
+}
+
+.mobile-filters .woocommerce-ordering {
+  margin: 0;
+}
+
+#products .orderby {
+  display: none;
+}

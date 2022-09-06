@@ -1,0 +1,39 @@
+.icon {
+	background-repeat: no-repeat;
+	&--price {
+		@extend .icon;
+		background-image: url(../../icons/price.svg);
+	}
+	&--delivery {
+		@extend .icon;
+		background-image: url(../../icons/delivery.svg);
+	}
+	&--delivery-red {
+		@extend .icon;
+		background-image: url(../../icons/delivery-red.svg);
+	}
+	&--nomadic-energy {
+		@extend .icon;
+		background-image: url(../../icons/nomadic-energy.svg);
+	}
+	&--more {
+		@extend .icon;
+		background-image: url(../../icons/more.svg);
+	}
+	&--cart {
+		@extend .icon;
+		background-image: url(../../icons/shop.svg);
+	}
+	&--search {
+		@extend .icon;
+		background-image: url(../../icons/search.svg);
+	}
+	&--trash {
+		@extend .icon;
+		background-image: url(../../icons/trash.svg);
+		&:hover {
+			background-image: url(../../icons/trash-red.svg);
+			background-color: white;
+		}
+	}
+}
