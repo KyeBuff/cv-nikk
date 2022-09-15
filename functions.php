@@ -510,7 +510,7 @@ function search_data_fetch() {
 				$product = wc_get_product(get_the_ID());
 				$imageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'full')[0];
 				echo '<li>';
-				echo '<div class="image-wrapper"><div class="featured-image" style="background-image: url(' . $imageUrl . ')"></div></div>';
+				echo '<div class="image-wrapper"><a href="' . $product->get_permalink() . '" class="featured-image" style="background-image: url(' . $imageUrl . ')"></a></div>';
 				echo '<div class="text-wrapper"><a href="' . $product->get_permalink() . '">' . get_the_title() . '</a><p><strong>' . $product->get_price_html() . '</strong></p>' . '</div></li>';
 
 				$productIndex++;
@@ -597,7 +597,7 @@ function search_data_fetch() {
 			if($index < 2) {
 				$imageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'full')[0];
 				echo '<li>';
-				echo '<div class="featured-image" style="background-image: url(' . $imageUrl . ')"></div>';
+				echo '<a href="' . get_permalink(get_the_ID()) . '" class="featured-image" style="background-image: url(' . $imageUrl . ')"></a>';
 				echo '<a href="' . get_permalink(get_the_ID()) . '" class="title">' . get_the_title(). '</a>';
 				echo '<small>' . get_the_date('F d, Y', get_the_ID()) . '</small>';
 				echo '<a href="' . get_permalink(get_the_ID()) . '" class="read-more">Read more</a>';

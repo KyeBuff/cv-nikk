@@ -116,6 +116,10 @@
 					    		}
 					    	}
 
+					    	&.active {
+					    		font-weight: 700 !important;
+					    	}
+
 					    	&::after {
 					    		content: '';
 					    		background-image: url('../../icons/nomadic-energy.svg');
@@ -343,8 +347,11 @@
 					.header-main__nav-advert-wrapper {
 						img {
 							display: block;
-							width: 50%;
+							max-width: 100%;
 							border-radius: 5px;
+						    height: 10rem;
+						    -o-object-fit: cover;
+						    object-fit: cover;
 						}
 
 						a {
@@ -414,6 +421,10 @@
 				padding: 25px 50px;
 			}
 
+			h4 {
+				font-size: 18px;
+			}
+
 			.first-column {
 				width: 600px;
 				padding-right: 60px;
@@ -431,6 +442,10 @@
 							a {
 								color: #3C3C3A;
 								font-weight: 700;
+
+								&:hover {
+									color: rgba(60, 60, 58, 0.7);
+								}
 							}
 
 							p {
@@ -456,12 +471,16 @@
 							.featured-image {
 								height: 75px;
 								width: 75px;
-								border: 1px solid #3C3C3A;
+								// border: 1px solid #3C3C3A;
 							}
 
 							a {
 								color: #3c3c3a;
 								font-weight: 600;
+
+								&:hover {
+									color: rgba(60, 60, 58, 0.7);
+								}
 							}
 
 							ins {
@@ -479,12 +498,21 @@
 			    background-repeat: no-repeat;
 			    border-radius: 5px;
 			    margin-bottom: 10px;
+			    display: block;
+
+			    &:hover {
+			    	opacity: 0.7;
+			    }
 			}
 
 			a.see-all {
 				text-transform: uppercase;
 				color: #3c3c3a;
 				font-weight: 600;
+
+				&:hover {
+					color: rgba(60, 60, 58, 0.7);
+				}
 			}
 
 			
@@ -515,6 +543,10 @@
 							.title {
 								color: #3C3C3A;
 								font-weight: 700;
+
+								&:hover {
+									color: rgba(60, 60, 58, 0.7);
+								}
 							}
 
 							.read-more {
@@ -522,6 +554,11 @@
 								font-weight: 600;
 								font-size: 13px;
 								margin-top: 5px;
+								color: #E9501C;
+
+								&:hover {
+									color: rgba(#E9501C, 0.7);
+								}
 							}
 						}
 					}

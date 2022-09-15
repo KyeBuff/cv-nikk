@@ -1,6 +1,6 @@
 {
-  "main.css": "main/main-67f3722d.css",
-  "main.css.map": "main/main-67f3722d.css.map",
+  "main.css": "main/main-63175a24.css",
+  "main.css.map": "main/main-63175a24.css.map",
   "main.js": "main/main-7d630c9d.js",
   "main.js.map": "main/main-7d630c9d.js.map",
   "main/assets/cross.svg": "main/assets/cross-bdcfc165.svg",
@@ -32,10 +32,10 @@
           "main/main-7d630c9d.js.map"
         ],
         "css": [
-          "main/main-67f3722d.css"
+          "main/main-63175a24.css"
         ],
         "css.map": [
-          "main/main-67f3722d.css.map"
+          "main/main-63175a24.css.map"
         ]
       }
     }
