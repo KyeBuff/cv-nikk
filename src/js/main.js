@@ -768,7 +768,10 @@ jQuery(document).ready(function($) {
 		'header-subnavigation',
 		'header-main__nav-items',
 		'header-main__nav-item',
-		'header-main__nav-link'
+		'header-main__nav-link',
+		'header-main',
+		'header-navigation',
+		'main-navigation-item'
 	];
 	var mobileMenuOpen = false;
 	var initialWindowWidth = $(window).outerWidth();

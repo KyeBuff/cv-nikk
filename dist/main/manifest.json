@@ -1,8 +1,8 @@
 {
   "main.css": "main/main-c8a086b8.css",
   "main.css.map": "main/main-c8a086b8.css.map",
-  "main.js": "main/main-7d630c9d.js",
-  "main.js.map": "main/main-7d630c9d.js.map",
+  "main.js": "main/main-4c5bab73.js",
+  "main.js.map": "main/main-4c5bab73.js.map",
   "main/assets/cross.svg": "main/assets/cross-bdcfc165.svg",
   "main/assets/delivery-red.svg": "main/assets/delivery-red-81bdc745.svg",
   "main/assets/delivery.svg": "main/assets/delivery-effc2afd.svg",
@@ -25,11 +25,11 @@
       "assets": {
         "js": [
           "main/runtime-c7e332e1.js",
-          "main/main-7d630c9d.js"
+          "main/main-4c5bab73.js"
         ],
         "js.map": [
           "main/runtime-c7e332e1.js.map",
-          "main/main-7d630c9d.js.map"
+          "main/main-4c5bab73.js.map"
         ],
         "css": [
           "main/main-c8a086b8.css"
