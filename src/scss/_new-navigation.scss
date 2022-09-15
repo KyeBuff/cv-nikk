@@ -352,6 +352,7 @@
 						    height: 10rem;
 						    -o-object-fit: cover;
 						    object-fit: cover;
+						    width: 100%;
 						}
 
 						a {
@@ -361,19 +362,22 @@
 							position: relative;
 
 							&::after {
-								content: '\f178';
-								font-family: "Font Awesome 5 Free";
-								display: inline-block;
-								font-style: normal;
-								font-variant: normal;
-								text-rendering: auto;
-								-webkit-font-smoothing: antialiased;
-					    		font-weight: 900;
-					    		width: 40px;
-					    		height: 10px;
-					    		position: absolute;
-					    		right: -45px;
-					    		top: 4px;
+								content: '';
+								background-image: url('../../icons/more.svg');
+								background-position: center;
+								background-size: 100%;
+								background-repeat: no-repeat;
+					    		width: 50px;
+								height: 25px;
+								position: absolute;
+								right: -45px;
+								top: -2px;
+							}
+
+							&:hover {
+								&::after {
+									opacity: 0.7;
+								}
 							}
 						}
 					}
