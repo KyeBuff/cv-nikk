@@ -787,13 +787,17 @@ jQuery(document).ready(function($) {
 	}
 
 	function displayShopSubMenuIfHomepage() {
-		if ( window.location.pathname == '/' && initialWindowWidth > 991) {
+		var pathName = window.location.pathname;
+
+		if ((pathName == '/' || pathName.indexOf("product") > -1 || pathName.indexOf("product-category") > -1) && initialWindowWidth > 991) {
 			var shopLink = $('.main-navigation a.shop-menu-link');
 
 			shopLink.addClass("active");
 			shopLink.parent('li').addClass("active");
+			$("#vanLifeMenu").addClass("hide");
+			$("#vanConversionMenu").addClass("hide");
 			$(".header-subnavigation").removeClass('hide');
-			$(".subnavigation-categories").removeClass("hide");
+			$("#shopMenu").removeClass("hide");
 			$("[data-elementor-type='header']").addClass("menu-spacer");
 
 			activeMenu = shopLink;
@@ -839,18 +843,21 @@ jQuery(document).ready(function($) {
 		}
 	});
 
-	$('.main-navigation a').click(function (e) {
+	$('.main-navigation a').hover(function (e) {
 		$('.main-navigation li').removeClass("active");
 		$(".main-navigation a").removeClass("active");
 		$(".header-subnavigation").addClass('hide');
 		$(this).addClass("active");
+		$("#shopMenu").addClass("hide");
+		$("#vanLifeMenu").addClass("hide");
+		$("#vanConversionMenu").addClass("hide");
 
 		if($(this).hasClass("shop-menu-link")) {
 			e.preventDefault();
 
 			$(this).parent('li').addClass("active");
 			$(".header-subnavigation").removeClass('hide');
-			$(".subnavigation-categories").removeClass("hide");
+			$("#shopMenu").removeClass("hide");
 			$(".header-main__nomadic-ad").addClass("hide");
 			$("[data-elementor-type='header']").addClass("menu-spacer");
 
@@ -866,10 +873,30 @@ jQuery(document).ready(function($) {
 			$(".header-main__nomadic-ad").removeClass("hide");
 		}
 
+		if($(this).hasClass("van-conversion-menu-link")) {
+			e.preventDefault();
+
+			$(this).parent('li').addClass("active");
+			$(".header-subnavigation").removeClass('hide');
+			$(".subnavigation-categories").addClass("hide");
+			$("#vanConversionMenu").removeClass("hide");
+			$(".header-main__nomadic-ad").addClass("hide");
+		}
+
+		if($(this).hasClass("van-life-menu-link")) {
+			e.preventDefault();
+
+			$(this).parent('li').addClass("active");
+			$(".header-subnavigation").removeClass('hide');
+			$(".subnavigation-categories").addClass("hide");
+			$("#vanLifeMenu").removeClass("hide");
+			$(".header-main__nomadic-ad").addClass("hide");
+		}
+
 		activeMenu = $(this);
 	});
 
-	$('.header-subnavigation .subnavigation-link').click(function (e) {
+	$('.header-subnavigation .subnavigation-link').hover(function (e) {
 		e.preventDefault();
 
 		if(activeSubMenu != null) {

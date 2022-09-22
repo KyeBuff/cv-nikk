@@ -252,7 +252,9 @@ function createSubMenu($navItem, $class_prefix = 'header-main', $shopMenu = fals
 }
 
 add_action( 'after_setup_theme', function() {
-	register_nav_menus( [ 'shop' => __( 'Yellow menu', 'hello-theme-child' ) ] );
+	register_nav_menus( [ 'shop' => __( 'Shop menu', 'hello-theme-child' ) ] );
+	register_nav_menus( [ 'van-conversion' => __( 'Van Conversion Menu', 'hello-theme-child' ) ] );
+	register_nav_menus( [ 'van-life' => __( 'Van Life Menu', 'hello-theme-child' ) ] );
 } );
 
 

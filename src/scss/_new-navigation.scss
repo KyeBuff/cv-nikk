@@ -260,6 +260,44 @@
 			}
 		}
 
+		.header-main__nav-advert-wrapper {
+			img {
+				display: block;
+				max-width: 100%;
+				border-radius: 5px;
+			    height: 10rem;
+			    -o-object-fit: cover;
+			    object-fit: cover;
+			    width: 100%;
+			}
+
+			a {
+				font-weight: 700;
+				text-transform: uppercase;
+				font-size: 1rem;
+				position: relative;
+
+				&::after {
+					content: '';
+					background-image: url('../../icons/more.svg');
+					background-position: center;
+					background-size: 100%;
+					background-repeat: no-repeat;
+		    		width: 50px;
+					height: 25px;
+					position: absolute;
+					right: -45px;
+					top: -2px;
+				}
+
+				&:hover {
+					&::after {
+						opacity: 0.7;
+					}
+				}
+			}
+		}
+
 		.header-subnavigation {
 			background: #ffcc05;
 		    width: 100%;
@@ -270,6 +308,79 @@
 		    display: flex;
 		    justify-content: center;
 		    box-shadow: -3px 2px 4px rgba(0, 0, 0, 0.2);
+
+		    #vanLifeMenu, #vanConversionMenu, #electricalSystemMenu {
+		    	display: flex;
+		    	width: 100%;
+			    justify-content: space-between;
+			    padding: 0 5vw;
+			    padding-top: 40px;
+			    padding-bottom: 60px;
+		    
+			    .column {
+			    	max-width: 400px;
+
+			    	&.book {
+			    		max-width: 200px;
+
+			    		img {
+			    			display: block;
+			    			margin: 0 auto;
+			    		}
+
+			    		p {
+			    			text-align: center;
+			    		}
+			    	}
+
+			    	.column-title {
+				    	font-size: 0.875rem;
+					    color: #3c3c3a;
+					    font-weight: 600;
+					    display: flex;
+
+			    	}
+
+			    	ul {
+			    		background-color: transparent;
+			    		box-shadow: none;
+			    		padding: 0;
+			    		display: block;
+
+			    		li {
+			    			display: block;
+			    			padding-top: 20px;
+
+			    			a {
+			    				font-weight: 500;
+							    font-size: .875rem;
+							    color: #3c3c3a;
+			    			}
+			    		}
+			    	}
+
+			    	.book-button {
+			    		background-color: #e9501c;
+					    color: #fff;
+					    border: 0.1rem solid transparent;
+					    padding: 0.66rem 1.5rem;
+					    font-weight: 500;
+					    font-size: 0.9375rem;
+					    line-height: 1;
+					    border-radius: 2px 2px 2px 2px;
+					    display: inline-block;
+					    text-align: center;
+					    text-transform: uppercase;
+					    padding-left: 0.5rem;
+					    padding-right: 0.5rem;
+					    display: block;
+
+					    &:hover {
+    						background-color: #69716a;
+					    }
+			    	}
+			    }
+			}
 
 		    ul {
 				li {
@@ -342,44 +453,6 @@
 
 					.header-main__nav-link {
 						display: flex;
-					}
-
-					.header-main__nav-advert-wrapper {
-						img {
-							display: block;
-							max-width: 100%;
-							border-radius: 5px;
-						    height: 10rem;
-						    -o-object-fit: cover;
-						    object-fit: cover;
-						    width: 100%;
-						}
-
-						a {
-							font-weight: 700;
-							text-transform: uppercase;
-							font-size: 1rem;
-							position: relative;
-
-							&::after {
-								content: '';
-								background-image: url('../../icons/more.svg');
-								background-position: center;
-								background-size: 100%;
-								background-repeat: no-repeat;
-					    		width: 50px;
-								height: 25px;
-								position: absolute;
-								right: -45px;
-								top: -2px;
-							}
-
-							&:hover {
-								&::after {
-									opacity: 0.7;
-								}
-							}
-						}
 					}
 				}
 			}
